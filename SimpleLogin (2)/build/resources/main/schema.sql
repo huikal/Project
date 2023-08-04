@@ -1,0 +1,121 @@
+
+DROP SEQUENCE SQ_CUSTOMER;
+CREATE SEQUENCE SQ_CUSTOMER START WITH 1 INCREMENT BY 1;
+
+DROP TABLE TB_CUSTOMER CASCADE CONSTRAINT;
+
+CREATE TABLE TB_CUSTOMER
+(
+    CID         NUMBER NOT NULL PRIMARY KEY,
+    FIRST_NAME  VARCHAR2(255), --이미지 출력에 사용
+    LAST_NAME   VARCHAR2(255), --이미지 출력에 사용
+    EMAIL       VARCHAR2(255), --제목 출력에 사용
+    PHONE       VARCHAR2(255), --섬네일 추가 설명에 사용
+    DELETE_YN   VARCHAR2(1) DEFAULT 'N',
+    INSERT_TIME VARCHAR2(255),
+    UPDATE_TIME VARCHAR2(255),
+    DELETE_TIME VARCHAR2(255)
+);
+
+
+
+DROP SEQUENCE SQ_TOUR;
+CREATE SEQUENCE SQ_TOUR START WITH 1 INCREMENT BY 1;
+
+DROP TABLE TB_TOUR CASCADE CONSTRAINT;
+
+CREATE TABLE TB_TOUR
+(
+    TID	NUMBER NOT NULL PRIMARY KEY,
+    TNAME	VARCHAR2(1000),
+    SIGHTS	VARCHAR2(1000),
+    MAIN	VARCHAR2(1000),
+    SUB1	VARCHAR2(1000),
+    SUB2	VARCHAR2(1000),
+    START_DATE	VARCHAR2(1000),
+    END_DATE	VARCHAR2(1000),
+    RESERVATION	VARCHAR2(1) DEFAULT 'N',
+    ADDRESS	VARCHAR2(1000),
+    PHONE	VARCHAR2(1000),
+    TAG_ONE	VARCHAR2(1000),
+    TAG_SECOND    VARCHAR2(1000),
+    FILE_NAME    VARCHAR2(1000),
+    FILE_TYPE    VARCHAR2(1000),
+    FILE_DATA    BLOB,
+    PRICE1	NUMBER,
+    PRICE2	NUMBER,
+    DELETE_YN	VARCHAR2(1) DEFAULT 'N',
+    INSERT_TIME	VARCHAR2(255),
+    UPDATE_TIME	VARCHAR2(255),
+    DELETE_TIME	VARCHAR2(255)
+);
+
+-- 대댓글 게시판 시퀀스 & 테이블 정의
+DROP SEQUENCE SQ_REPLY_BOARD;
+
+CREATE SEQUENCE  SQ_REPLY_BOARD
+    MINVALUE 1 MAXVALUE 99999999
+    INCREMENT BY 1 START WITH 1;
+
+DROP TABLE TB_REPLY_BOARD CASCADE CONSTRAINT;
+
+CREATE TABLE TB_REPLY_BOARD (
+                                BID NUMBER           NOT NULL PRIMARY KEY,
+                                BOARD_TITLE          VARCHAR2(256) ,
+                                BOARD_CONTENT        VARCHAR2(255),
+                                BOARD_WRITER         VARCHAR2(255) , --외래키 (사용자 id)
+                                BOARD_IMAGE         VARCHAR2(1000) ,
+                                VIEW_CNT             NUMBER DEFAULT 0,
+                                BOARD_GROUP          NUMBER,           -- 트리구조 최상위 (부모) 노드
+                                BOARD_PARENT         NUMBER,           -- 자신의 부모 노드
+                                REVIEW           VARCHAR2(1) DEFAULT 'Y',
+                                DELETE_YN            VARCHAR2(1) DEFAULT 'N',
+                                INSERT_TIME          VARCHAR2(255),
+                                UPDATE_TIME          VARCHAR2(255),
+                                DELETE_TIME          VARCHAR2(255)
+);
+
+--유저 테이블
+
+DROP SEQUENCE SQ_USER;
+CREATE SEQUENCE SQ_USER
+    INCREMENT BY 1 START WITH 1
+    MINVALUE 1
+    MAXVALUE 99999999;
+
+--권한 테이블
+
+DROP SEQUENCE SQ_ROLE;
+CREATE SEQUENCE SQ_ROLE
+    INCREMENT BY 1 START WITH 1
+    MINVALUE 1
+    MAXVALUE 99999999;
+
+DROP TABLE TB_USER CASCADE CONSTRAINTS;
+DROP TABLE TB_ROLE CASCADE CONSTRAINTS;
+DROP TABLE TB_USER_ROLE CASCADE CONSTRAINTS;
+
+CREATE TABLE TB_USER(
+                        ID NUMBER NOT NULL PRIMARY KEY,
+                        EMAIL VARCHAR2(1000) UNIQUE,
+                        FULLNAME VARCHAR2(1000),
+                        NICKNAME VARCHAR2(1000),
+                        PASSWORD VARCHAR2(1000),
+                        USERNAME VARCHAR2(1000) UNIQUE,
+                        PHONE VARCHAR2(1000),
+                        ADDRESS VARCHAR2(1000)
+);
+
+CREATE TABLE TB_ROLE(
+                        ID NUMBER NOT NULL PRIMARY KEY,
+                        NAME VARCHAR2(1000) UNIQUE
+);
+
+CREATE TABLE TB_USER_ROLE (
+                              USER_ID NUMBER NOT NULL,
+                              ROLE_ID NUMBER NOT NULL,
+                              PRIMARY KEY (USER_ID, ROLE_ID)
+);
+
+
+COMMIT;
