@@ -1,0 +1,22 @@
+{
+  "totalItems": 1,
+  "replyBoard": [
+    {
+      "insertTime": "2023-07-11 01:44:25",
+      "updateTime": null,
+      "deleteYn": "N",
+      "deleteTime": null,
+      "bid": 1,
+      "boardTitle": "경주 최고급 호텔 후기",
+      "boardContent": "내용",
+      "boardWriter": "작성자",
+      "boardImage": "https://drive.google.com/uc?export=view&id=1zrWrGmaS_gushQNJgXhaOJTb3O008EM8",
+      "viewCnt": 0,
+      "boardGroup": 1,
+      "boardParent": 0,
+      "review": "Y"
+    }
+  ],
+  "totalPages": 1,
+  "currentPage": 0
+}
