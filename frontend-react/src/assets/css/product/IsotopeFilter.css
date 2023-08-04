@@ -1,0 +1,104 @@
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 7px;
+  color:black;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #defc3c;
+  color: black;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: black;
+  color: white;
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0.5em;
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+/* ---- isotope ---- */
+.grid {
+  background: white;
+  /* max-width: 1200px; */
+}
+
+/* clear fix */
+.grid::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.filters {
+  margin-top: 75px;
+}
+
+/* ui group */
+.ui-group {
+  display: flex;
+  background-color: #efefef;
+  padding: 10px;
+  border-bottom: 2px solid black
+}
+
+.ui-group .button-group {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.content-box {
+  width: 300px;
+  height: 400px;
+  margin: 5px;
+  /* padding: 5px; */
+  /* float: left; */
+}
+
+.isoVisible {
+  visibility: visible;
+  background-color: #efefef;
+  padding-left: 10%;
+}
+
+.isoHidden { 
+  display: none;
+  /* visibility: hidden; */
+  background-color: #efefef;
+}
+
+.box {
+  background-color: #efefef;
+padding-bottom: 30px;
+}
+
+/* 추가 */
+/* TODO:  isotope 벡엔드 데이터가 비동기로 늦게 전송되므로 아래처럼 미리 투명하게 크기를 잡아줌 */
+/* TODO: vh (모니터에 따라 비율로 적용됨) */
+.grid-wrapper {
+  /* background: rgba(255,255,255,0);
+  width: 100%; */
+  /* height: 50vh; */
+  height: 500px;
+  background-color: white;
+}

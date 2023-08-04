@@ -1,0 +1,96 @@
+.calendar {
+  text-align: center;
+}
+
+/* input 형식 변경 */
+.datePickerTest {
+  display: inline;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  background-color: black;
+  box-sizing: border-box;
+  height: 46px;
+  color: white;
+  text-align: center;
+  padding-right: 14px;
+}
+
+/* todo: 달력 꾸미기 시작 */
+/*  세모 없애기 */
+.react-datepicker__triangle {
+  display: none;
+}
+
+/* 달력의 달과 연도 부분 */
+.react-datepicker__header {
+  background-color: white;
+  border-bottom: white;
+  padding: 20px;
+}
+
+/* 일 있는 곳 배경 */
+/* .react-datepicker__month-container {
+  background-color: black;
+} */
+
+/* 일 글자 색 변경 */
+/* .react-datepicker__day {
+  color: white;
+} */
+
+/* 선택된 부분 배경색 */
+.react-datepicker__day--selected {
+  background-color: #defc3c;
+  color: black;
+}
+
+/* TODO: 수정 */
+.react-datepicker__day:hover {
+  background-color: #defc3c;
+}
+
+/* todo: 달력 꾸미기 끝 */
+
+/* DatePicker 박스 밑에 위치 */
+.calContent {
+  display: inline-block;
+}
+
+.sort {
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+}
+
+.linkArrow {
+  color: white;
+}
+
+/* 해당 달의 날짜만 보이게 */
+.react-datepicker__day--outside-month {
+  cursor: default;
+  visibility: hidden;
+}
+
+/* 화살표 / 현재 달 표시 */
+.date-customheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 달력 화살표 */
+.arrow {
+  border: none;
+  background-color: white;
+  margin: 0 2rem;
+}
+
+/* 년 월 표시 부분 */
+.custom-month {
+  font-size: large;
+  font-weight: 900;
+}

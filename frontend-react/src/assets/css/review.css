@@ -1,0 +1,715 @@
+/* 웹폰트: Noto Sans Korean - Regular 400 (본문용 얇은 서체) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+/* 웹폰트: Noto Sans Korean - Black 900 (타이틀용 굵은 서체) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* 셀렉트박스,리뷰쓰기버튼 시작 */
+.select_review {
+    width: 1850px;
+    display: flex;
+    align-items: center;
+}
+
+.select_myReview {
+    width: 1850px;
+    display: flex;
+}
+
+/* 셀렉트박스,리뷰쓰기버튼 끝 */
+
+/* 마이리뷰 페이지 크기 */
+.my_Review_page {
+    flex-grow: 1;
+    flex-direction: column;
+    align-self: stretch;
+    display: flex;
+}
+
+/* 페이지 전체 나브바 제외 */
+.sider_review {
+    display: flex;
+}
+
+
+/* 마이리뷰 리뷰쓰기 */
+.my_Review_Box {
+    flex-grow: 1;
+    margin-top: 70px;
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+
+    background-color: #ffffff;
+}
+
+/* 마이페이지 리뷰 형식 */
+.my_Review_Box_small {
+    flex-grow: 1;
+    background-color: #ffffff;
+}
+
+
+/* 셀렉트박스 시작 */
+.select_div {
+    width: 200px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+/* 마이리뷰 셀렉트박스 시작 */
+.my_Review_select_div {
+    width: 200px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+/* 셀렉트박스 끝 */
+
+/* 셀렉트박스 옵션 시작 */
+.select_Box {
+    margin-top: 27px;
+    width: 120px;
+    height: 46px;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+/* 셀렉트박스 옵션 끝 */
+
+/* 리뷰쓰기 버튼 시작 */
+.review_creat_button_div {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    height: 50px;
+    margin-left: 1350px;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+/* 마이리뷰 리뷰쓰기 버튼 시작 */
+.my_review_creat_button_div {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 1450px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+/* 리뷰쓰기 버튼 끝 */
+
+/* 리뷰쓰기 버튼 텍스트 시작 */
+.span_text {
+    margin-top: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+/* 리뷰쓰기 버튼 텍스트 끝 */
+
+/* 리뷰박스 전체 시작 */
+.review_all {
+    flex-wrap: wrap;
+    float: left;
+}
+
+/* 리뷰박스 전체 끝 */
+
+/* 페이지 화살표 */
+.hwasar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* 리뷰박스 시작 */
+.review_box {
+    margin-left: 80px;
+    background-color: rgb(252, 255, 234);
+    border: 1px solid black;
+    width: 800px;
+    height: 520px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+/* 리뷰박스 끝 */
+
+
+
+
+/* 리뷰박스 사이즈 조정 */
+.review_box_size_cc {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 50px;
+}
+
+
+/* 리뷰박스 안에 이미지,인풋,텍스트 박스 시작*/
+.image_text_input_box {
+    width: 800px;
+    height: 335px;
+    display: flex;
+}
+
+/* 리뷰박스 안에 이미지,인풋,텍스트 박스 끝*/
+
+
+/* 이미지 겹치기 */
+.img_img {
+    position: relative;
+}
+
+/* 수정버튼 위치조정 */
+.cc_position {
+    margin-top: 550px;
+    margin-left: 650px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* 삭제버튼 위치조정 */
+.cc_delet_position {
+    margin-top: 550px;
+    margin-left: 500px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* 수정 버튼 레이아웃 */
+.review_select_cc {
+    padding-top: 6px;
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 35px;
+    display: inline-block;
+}
+
+/* 이미지박스 시작 */
+.image_box {
+    margin: 30px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+
+}
+
+/* 이미지박스 끝 */
+
+.click_motion {
+    cursor: pointer;
+}
+
+.hart {
+    margin-top: 50px;
+    margin-left: 280px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.hart_count {
+    margin-top: 80px;
+    margin-left: 280px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    color: red;
+}
+
+/* 리뷰제목 텍스트 시작 */
+.div_reviewText {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    padding-top: 3px;
+    width: 400px;
+    height: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* 리뷰 내용 텍스트 시작 */
+.div_reviewText_Big {
+    margin-left: 20px;
+    width: 400px;
+    height: 220px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+}
+
+/* 여행지 윗라인 */
+.select_review_top {
+    display: inline-block;
+    width: 400px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 15px;
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+/* 폰트 */
+.font {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    /* 링크의 밑줄 제거 */
+    color: inherit;
+    /* 링크의 색상 제거 */
+}
+
+/* 리뷰선택 */
+.review_select {
+    display: flex;
+}
+
+/* 리뷰 일괄 레이아웃 */
+.review_select_1p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+
+
+/* 업체 서비스 만족도 선택 */
+.review_select_box {
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 300px;
+    height: 170px;
+}
+
+
+/* 댓글 작성 칸 */
+.review_input {
+    padding: 10px;
+    width: 350px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 25px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+/* 댓글 출력 칸 */
+.review_output {
+    margin-left: 50px;
+    width: 400px;
+    height: 130px;
+    overflow: auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+
+/* 댓글 */
+.review_output_text {
+    margin: 8px;
+    text-align: left;
+}
+
+/* 댓글 프로필 */
+.img_propil {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+/* 댓글 프로필 */
+
+
+/* 댓글 전송 */
+.click_reviewText {
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-bottom: 7px;
+    margin-left: 5px;
+    padding-left: 3px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+/* 댓글 전송 */
+
+.input_clickText {
+    margin-left: 50px;
+}
+
+/* 댓글작성 */
+.profile_link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.review_output_text {
+    display: flex;
+    align-items: center;
+}
+
+.review_output_text .delete_button {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* 댓글작성 */
+
+
+/* 리뷰쓰기 전체 틀*/
+.creat_rivew_all {
+    margin-top: 120px;
+    display: inline-block;
+    width: 1200px;
+    height: 800px;
+    border: 1px solid black;
+    background-color: rgb(252, 255, 234);
+}
+
+/* 이미지박스 */
+.creat_rivew_img_box {
+    margin-top: 60px;
+    margin-left: 60px;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    z-index: 1;
+}
+
+.height {
+display: inline-block;
+}
+
+/* 페이지네이션 페이지 버튼 */
+.pagination {
+    margin-left: 875px;
+    margin-bottom: 20px;
+}
+
+/* 로딩되는 이미지 */
+.loaded-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* 플러스있는 버튼을 감싸는 박스 */
+.plus_Box {
+    margin: 100px;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+/* 플러스버튼 이미지 */
+.plus {
+    margin: 75px;
+    cursor: pointer;
+}
+
+/* 이미지추가하기,삭제하기 */
+.img_plus_box {
+    margin-left: 60px;
+    width: 400px;
+    display: flex;
+}
+
+/* 이미지 추가하기 버튼 */
+.img_plus {
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: solid 1px black;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 15px;
+    flex: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* 삭제버튼 */
+.img_delet {
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: solid 1px black;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 15px;
+    flex: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* 이미지 쪽 공간 div*/
+.div_img_div {
+    width: 525px;
+}
+
+/* 이미지, 제목 밑 내용 공간 div */
+.top_box {
+    display: flex;
+}
+
+/* 제목 */
+.BigText {
+    margin-top: 40px;
+    margin-left: 84.125px;
+    width: 504.75px;
+    height: 50px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(175, 175, 175);
+    text-align: center;
+}
+
+/* 옵션박스를 감싸는 div */
+.select_options_div {}
+
+/* 옵션박스를 감싸는 div */
+.nickName_div {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 80px;
+    position: absolute;
+}
+
+/* 내 여행지 옵션 박스 */
+.select_options {
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid rgb(175, 175, 175);
+    background-color: transparent;
+    font-size: 20px;
+
+
+}
+
+/* 내 여행지 옵션 박스 내부 선택지들 */
+.select_options option {
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+/* 내 여행지 옵션 박스 내부 스크롤 만들기 */
+.select_options_container {
+    position: relative;
+}
+
+
+/* 내 여행지 옵션 박스 내부 선택지들 */
+.select_option_first {
+    display: none;
+}
+
+/* 내 여행지 옵션 박스옆에 어디를 다녀오셨나요? div */
+.select_options_qna {
+    margin-left: 80px;
+}
+
+
+/* 내용 */
+.text_box_small {
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-left: 84.125px;
+    width: 504.75px;
+    height: 50px;
+    background: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: left;
+}
+
+/* 내용박스 */
+.text_area {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(175, 175, 175);
+    height: 320px;
+    resize: none;
+}
+
+/* 평가 선택 박스*/
+.bottom_box {
+    height: 200px;
+}
+
+/* 평가 안내 멘트 8p */
+.h3_8p {
+    font-size: 20px;
+    color: rgb(102, 102, 102);
+}
+
+
+/* 긍정 부정 합 div 박스 */
+.happy_end_bad {
+    display: flex;
+}
+
+
+/* 긍정 부정 div 틀 박스 */
+.happy_select {
+    width: 600px;
+    height: 160px;
+}
+
+.bad_select {
+    width: 600px;
+    height: 160px;
+}
+
+/* 긍정 부정 사이 기준선 */
+.border_height_line {
+    margin-top: 40px;
+    width: 1px;
+    height: 120px;
+    border: 1px solid rgb(175, 175, 175);
+}
+
+/* 긍정 부정 선택지들 박스 양식 */
+.select_box_all {
+    border: 1px solid black;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    margin: 20px;
+    width: 100px;
+
+}
+
+/* 선택할때 바뀌는 색상 */
+.bg_color_select_box {
+    background-color: #defc3c;
+}
+
+/* 작성완료 버튼 */
+.pinish_review {
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 170px;
+    margin-left: 500px;
+    width: 200px;
+    position: absolute;
+    z-index: 2;
+}
+
+.pinish_review:hover {
+    background-color: #defc3c;
+}
+
+.myReview {
+    width: 100%;
+    height: 800px;
+    background-color: #defc3c;
+}
+
+.inline_block {
+    display: inline-block;
+}
+
+.position {
+    position: absolute;
+}
+
+.review_nickname {
+    margin-left: 35px;
+    margin-top: 3px;
+    z-index: 1;
+}
+
+.review_day_time {
+    margin-left: 250px;
+    margin-top: 3px;
+    z-index: 2;
+}
+
+.review_day_time_cerat {
+
+    font-size: 20px;
+    margin-left: 350px;
+    margin-top: 15px;
+    z-index: 2;
+}
+
+
+.none {
+    background: none;
+    border-color: none;
+    border: none;
+    background-color: none;
+    color: none;
+}
+
+.solid{
+    border:  1px solid black;
+}
+
+
+.update_left{
+    position: absolute;
+    width: 200px;
+    margin-left: 200px;
+}
+.update_right{
+    position: absolute;
+    width: 200px;
+    margin-left: 200px;
+}
+.update_div{
+position: absolute;
+}
